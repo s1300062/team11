@@ -10,6 +10,7 @@ public class PauseScript2 : MonoBehaviour {
 
 	void Start(){
 		_audioSource = this.GetComponent<AudioSource>();
+		pauseUI.SetActive(false);
 	}
 	
 	// Update is called once per frame
