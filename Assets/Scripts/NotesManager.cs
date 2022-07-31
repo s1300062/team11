@@ -10,8 +10,8 @@ public class Data
     public int BPM;
     public int offset;
     public Note[] notes;
-
 }
+
 [Serializable]
 public class Note
 {
@@ -24,7 +24,10 @@ public class Note
 public class NotesManager : MonoBehaviour
 {
     public int noteNum;
-    private string songName;
+
+    //画面上から音楽指定を可能にする
+    [SerializeField] private string songName;
+    //
 
     public List<int> LaneNum = new List<int>();
     public List<int> NoteType = new List<int>();
@@ -37,7 +40,7 @@ public class NotesManager : MonoBehaviour
     void OnEnable()
     {
         noteNum = 0;
-        songName = "トンデモワンダーズ";
+        // songName = "トンデモワンダーズ";
         Load(songName);
     }
 
@@ -53,12 +56,18 @@ public class NotesManager : MonoBehaviour
             float kankaku = 60 / (inputJson.BPM * (float)inputJson.notes[i].LPB);
             float beatSec = kankaku * (float)inputJson.notes[i].LPB;
             float time = (beatSec * inputJson.notes[i].num / (float)inputJson.notes[i].LPB) + inputJson.offset + 0.01f;
-            NotesTime.Add(time);
+            // NotesTime.Add(time);
+            NotesTime.Add(time - inputJson.offset);
             LaneNum.Add(inputJson.notes[i].block);
             NoteType.Add(inputJson.notes[i].type);
 
             float z = NotesTime[i] * NotesSpeed;
-            NotesObj.Add(Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z), Quaternion.identity));
+            NotesObj.Add(Instantiate(noteObj, new Vector3(inputJson.notes[i].block - 1.5f, 0.55f, z - inputJson.offset + inputJson.offset),
+                Quaternion.identity));
         }
     }
 }
+
+offset = 44000Hz or 44KHz
+の時
+NotesEditorのoffsetを44000ずらすと1秒ずれるらしい

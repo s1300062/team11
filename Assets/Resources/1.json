@@ -1,0 +1,71 @@
+﻿{
+  "name": "1",
+  "maxBlock": 5,
+  "BPM": 158,
+  "offset": 3600,
+  "notes": [
+    {
+      "LPB": 4,
+      "num": 16,
+      "block": 0,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 16,
+      "block": 2,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 20,
+      "block": 0,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 22,
+      "block": 1,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 24,
+      "block": 2,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 26,
+      "block": 3,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 27,
+      "block": 1,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 28,
+      "block": 0,
+      "type": 1,
+      "notes": []
+    },
+    {
+      "LPB": 4,
+      "num": 28,
+      "block": 2,
+      "type": 1,
+      "notes": []
+    }
+  ]
+}
