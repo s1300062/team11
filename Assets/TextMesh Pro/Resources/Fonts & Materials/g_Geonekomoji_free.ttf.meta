@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 2e063e26a1656a1468becc41b3fdf058
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - g_GeoNekomoji_free
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5054c8768ac8bd84dbd3a1aae13d9fff, type: 3}
+  - {fileID: 12800000, guid: 326abde9b5bb74c42b3271cbb452b35c, type: 3}
+  - {fileID: 12800000, guid: ee29dfaa97dd9ce42ade47086c2b1bfd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
