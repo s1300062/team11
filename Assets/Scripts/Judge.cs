@@ -42,13 +42,18 @@ public class Judge : MonoBehaviour
             }
         }
 
-        if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
+        //タイムリストの要素が無い場合は判定しない
+        if (notesManager.NotesTime.Count > 0)
         {
-            message(3);
-            deleteData();
-            Debug.Log("Miss");
-            //ミス
+            if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
+            {
+                message(3);
+                deleteData();
+                Debug.Log("Miss");
+                //ミス
+            }
         }
+
     }
     void Judgement(float timeLag)
     {
