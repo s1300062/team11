@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,11 +5,11 @@ using UnityEngine;
 public class Judge : MonoBehaviour
 {
     //変数の宣言
+    private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
-    private float timer;
 
-    private void Start()
+    void Start()
     {
         timer = 0;
     }
@@ -50,7 +49,7 @@ public class Judge : MonoBehaviour
                 Judgement(GetABS(timer - notesManager.NotesTime[0]));
             }
         }
-        
+
         //タイムリストの要素が無い場合は判定しない
         if (notesManager.NotesTime.Count > 0)
         {
@@ -62,7 +61,7 @@ public class Judge : MonoBehaviour
                 //ミス
             }
         }
-        
+
     }
     void Judgement(float timeLag)
     {
