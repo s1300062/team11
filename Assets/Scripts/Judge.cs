@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,13 +8,21 @@ public class Judge : MonoBehaviour
     //変数の宣言
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
+    private float timer;
+
+    private void Start()
+    {
+        timer = 0;
+    }
+
     void Update()
     {
+        timer += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.D))//〇キーが押されたとき
         {
             if (notesManager.LaneNum[0] == 0)//押されたボタンはレーンの番号とあっているか？
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(timer - notesManager.NotesTime[0]));
                 /*
                 本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
                 その絶対値をJudgement関数に送る
@@ -24,28 +33,28 @@ public class Judge : MonoBehaviour
         {
             if (notesManager.LaneNum[0] == 1)
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(timer - notesManager.NotesTime[0]));
             }
         }
         if (Input.GetKeyDown(KeyCode.J))
         {
             if (notesManager.LaneNum[0] == 2)
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(timer - notesManager.NotesTime[0]));
             }
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
             if (notesManager.LaneNum[0] == 3)
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                Judgement(GetABS(timer - notesManager.NotesTime[0]));
             }
         }
         
         //タイムリストの要素が無い場合は判定しない
         if (notesManager.NotesTime.Count > 0)
         {
-            if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
+            if (timer > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
             {
                 message(3);
                 deleteData();
