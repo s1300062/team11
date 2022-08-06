@@ -8,5 +8,5 @@ public class restart: MonoBehaviour
     public void Retry()
     { 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-　　}
+    }
 }
