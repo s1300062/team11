@@ -250,7 +250,9 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 17}
   m_Selected: 0
+
   m_LastSelected: 1
+
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,9 +311,10 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+
+      m_SelectedIDs: fc5a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: d0f7ffffbcf8ffff22f9ffffb4f9ffffeaf9ffff18faffff46faffff38fbffffaa600000
+      m_ExpandedIDs: 90b7ffff4ae5ffff7ee6ffff1ee9ffff66e9ffffa2e9ffff76f6fffffaf6ffff2cf8ffff94f8ffffe8f8ffff38fbffffcc5b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
