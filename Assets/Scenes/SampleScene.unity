@@ -1566,6 +1566,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5094852755870898965, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094852755870898965, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ff40d7dbc0ea5d7469e12d519f696637, type: 3}
+    - target: {fileID: 5094852755870898965, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094852755870898965, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094852755870898965, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
+      propertyPath: m_Color.g
+      value: 0.19974028
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094852755870898965, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
+      propertyPath: m_Color.r
+      value: 0.07008722
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72523453831cfa7449b3b3e041a28310, type: 3}
 --- !u!1001 &6435225638248786572
