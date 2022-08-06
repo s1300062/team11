@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 600
-    y: 238
+    x: 327
+    y: 206
     width: 1206
     height: 715
   m_ShowMode: 4
@@ -137,8 +137,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 600
-    y: 268
+    x: 327
+    y: 236
     width: 1206
     height: 646
   m_ViewDataDictionary: {fileID: 0}
