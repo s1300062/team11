@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 62035949ed79c6d469591b8453561b54
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 82c5616d853fc5b41b2e4e937497368f
+    m_Address: Assets/Text/story1success.txt
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 445970f24a5372a46b34e089f9eea88f, type: 2}
   m_SchemaSet:
