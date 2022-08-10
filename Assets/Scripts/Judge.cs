@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Judge : MonoBehaviour
 {
     //変数の宣言
-    public int score = 0;
+    public static int score;
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
@@ -13,6 +15,7 @@ public class Judge : MonoBehaviour
     void Start()
     {
         timer = 0;
+        score = 0;
     }
 
     void Update()
@@ -92,6 +95,11 @@ public class Judge : MonoBehaviour
                     score += 100;
                 }
             }
+        }
+
+        if (notesManager.NoteType.Count == 0)
+        {
+            SceneManager.LoadScene("Result");
         }
     }
     float GetABS(float num)//引数の絶対値を返す関数

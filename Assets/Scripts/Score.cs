@@ -1,16 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    public Judge judge;
     public Text scoreText;
-    
+    private static int _score;
+
+    private static void getScore()
+    {
+        _score = Judge.score;
+    }
+
     void Update()
     {
-        scoreText.text = "SCORE: " + judge.score;
+        getScore();
+        scoreText.text = "SCORE: " + _score;
     }
 }

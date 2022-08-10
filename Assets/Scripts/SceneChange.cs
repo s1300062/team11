@@ -11,13 +11,13 @@ public class SceneChange : UIBehaviour
     {
         base.Start();
 
-        // ButtonƒNƒŠƒbƒNAOnClickƒƒ\ƒbƒh‚ğŒÄ‚Ño‚·
+        // Buttonï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½AOnClickï¿½ï¿½ï¿½\ï¿½bï¿½hï¿½ï¿½ï¿½Ä‚Ñoï¿½ï¿½
         GetComponent<Button>().onClick.AddListener(OnClick);
     }
 
     public void OnClick()
     {
-        // uGameScenevƒV[ƒ“‚É‘JˆÚ‚·‚é
-        SceneManager.LoadScene("SampleScene");
+        // ï¿½uGameSceneï¿½vï¿½Vï¿½[ï¿½ï¿½ï¿½É‘Jï¿½Ú‚ï¿½ï¿½ï¿½
+        SceneManager.LoadScene("Game1");
     }
 }
