@@ -65,7 +65,10 @@ public class Judge : MonoBehaviour
                 //ミス
             }
         }
-
+        if (notesManager.NoteType.Count == 0)
+        {
+            SceneManager.LoadScene("Result");
+        }
     }
     void Judgement(float timeLag)
     {
@@ -95,11 +98,6 @@ public class Judge : MonoBehaviour
                     score += 100;
                 }
             }
-        }
-
-        if (notesManager.NoteType.Count == 0)
-        {
-            SceneManager.LoadScene("Result");
         }
     }
     float GetABS(float num)//引数の絶対値を返す関数

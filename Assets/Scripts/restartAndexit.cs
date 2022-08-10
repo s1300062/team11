@@ -37,7 +37,8 @@ public class restartAndexit: MonoBehaviour
      {
          num.ToString();
          string sceneName = "Game" + num;
-         SceneManager.LoadScene(sceneName);
+         if (num < 4) SceneManager.LoadScene(sceneName);
+         else SceneManager.LoadScene("Final");
          num++;
      }
 }
