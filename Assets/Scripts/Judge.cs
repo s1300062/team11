@@ -5,6 +5,7 @@ using UnityEngine;
 public class Judge : MonoBehaviour
 {
     //変数の宣言
+    public int score = 0;
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
@@ -70,6 +71,7 @@ public class Judge : MonoBehaviour
             Debug.Log("Perfect");
             message(0);
             deleteData();
+            score += 10000;
         }
         else
         {
@@ -78,6 +80,7 @@ public class Judge : MonoBehaviour
                 Debug.Log("Great");
                 message(1);
                 deleteData();
+                score += 1000;
             }
             else
             {
@@ -86,6 +89,7 @@ public class Judge : MonoBehaviour
                     Debug.Log("Bad");
                     message(2);
                     deleteData();
+                    score += 100;
                 }
             }
         }
