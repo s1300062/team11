@@ -1261,7 +1261,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 958e484abfab04d1499f55842039ff35, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d691fdce39ecf44f4b13ced7b338b714, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteNum: 0
-  songName: "3\u66F2\u76EE"
+  songName: "\uFF11\u66F2\u76EE"
   LaneNum: 
   NoteType: 
   NotesTime: []

@@ -8,10 +8,12 @@ public class Judge : MonoBehaviour
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
+    public static int score = 0;
 
     void Start()
     {
         timer = 0;
+        score = 0;
     }
 
     void Update()
@@ -70,6 +72,7 @@ public class Judge : MonoBehaviour
             Debug.Log("Perfect");
             message(0);
             deleteData();
+            score += 1000;
         }
         else
         {
@@ -78,6 +81,7 @@ public class Judge : MonoBehaviour
                 Debug.Log("Great");
                 message(1);
                 deleteData();
+                score += 700;
             }
             else
             {
@@ -86,6 +90,7 @@ public class Judge : MonoBehaviour
                     Debug.Log("Bad");
                     message(2);
                     deleteData();
+                    score += 500;
                 }
             }
         }
