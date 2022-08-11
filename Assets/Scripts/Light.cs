@@ -6,6 +6,9 @@ public class Light : MonoBehaviour
 {
     [SerializeField] private float Speed = 3;
     [SerializeField] private int num = 0;
+    [SerializeField] GameObject stopUI;
+    [SerializeField] GameObject countUI;
+
     private Renderer rend;
     private float alfa = 0;
     void Start()
@@ -14,41 +17,44 @@ public class Light : MonoBehaviour
     }
     void Update()
     {
+            if (!(rend.material.color.a <= 0))
+            {
+                rend.material.color = new Color(rend.material.color.r, rend.material.color.r, rend.material.color.r, alfa);
+            }
 
-        if (!(rend.material.color.a <= 0))
+        if (!stopUI.activeSelf && !countUI.activeSelf)
         {
-            rend.material.color = new Color(rend.material.color.r, rend.material.color.r, rend.material.color.r, alfa);
-        }
+            if (num == 1)
+            {
+                if (Input.GetKeyDown(KeyCode.D))
+                {
+                    colorChange();
+                }
+            }
+            if (num == 2)
+            {
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    colorChange();
+                }
+            }
+            if (num == 3)
+            {
+                if (Input.GetKeyDown(KeyCode.J))
+                {
+                    colorChange();
+                }
+            }
+            if (num == 4)
+            {
+                if (Input.GetKeyDown(KeyCode.K))
+                {
+                    colorChange();
+                }
+            }
 
-        if (num == 1)
-        {
-            if (Input.GetKeyDown(KeyCode.D))
-            {
-                colorChange();
-            }
+            alfa -= Speed * Time.deltaTime;
         }
-        if (num == 2)
-        {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                colorChange();
-            }
-        }
-        if (num == 3)
-        {
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                colorChange();
-            }
-        }
-        if (num == 4)
-        {
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                colorChange();
-            }
-        }
-        alfa -= Speed * Time.deltaTime;
     }
 
     void colorChange()
