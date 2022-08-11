@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 40c1df9d452b5504394df3d57801e521
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - AiharaHudemojiKaisho Free
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4c950db7feba2c240942b52e256fb89c, type: 3}
+  - {fileID: 12800000, guid: 1c6a76f3b28568f46997d3f8e5ac8e86, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
