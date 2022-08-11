@@ -1167,7 +1167,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: SampleSceneS
+    stringVal: 1st game
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &2121623900

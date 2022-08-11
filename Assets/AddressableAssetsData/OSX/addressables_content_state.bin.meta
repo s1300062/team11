@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/AddressableAssetsData/OSX/addressables_content_state.bin.meta
 guid: e10e9b0be408041bea848f0c09553a64
+========
+guid: e808722e6c50ff741aa13e8416db0285
+>>>>>>>> main:Assets/Scenes/Ending-Normal.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
