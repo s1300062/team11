@@ -13,6 +13,7 @@ public class Judge : MonoBehaviour
     [SerializeField] GameObject stopUI;
     [SerializeField] GameObject countUI;
     public static int score = 0;
+    public static int _i = 0;
 
     void Start()
     {
@@ -131,7 +132,36 @@ public class Judge : MonoBehaviour
 
     void FINISH()
     {
-        SceneManager.LoadScene("2nd game");
+        if (SceneManager.GetActiveScene().name == "1st game")
+        {
+            if (score >= 259200)
+            {
+                SceneManager.LoadScene("story-1-G");
+                _i++;
+            }
+            else SceneManager.LoadScene("story-1-B");
+        }
+
+        else if (SceneManager.GetActiveScene().name == "2nd game")
+        {
+            if (score >= 204600)
+            {
+                SceneManager.LoadScene("story-2-G");
+                _i++;
+            }
+            else SceneManager.LoadScene("story-2-B");
+        }
+
+        else if (SceneManager.GetActiveScene().name == "3rd game")
+        {
+            if (score >= 204600)
+            {
+                SceneManager.LoadScene("story-3-G");
+                _i++;
+            }
+            else SceneManager.LoadScene("story-3-B");
+        }
+
     }
         
 }
