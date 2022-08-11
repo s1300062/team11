@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 593779585}
   _audioSource: {fileID: 963194229}
-  CountdownPanel: {fileID: 0}
+  CountdownPanel: {fileID: 754444661}
 --- !u!1 &1065862511
 GameObject:
   m_ObjectHideFlags: 0
