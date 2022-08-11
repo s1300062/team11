@@ -7,6 +7,8 @@ public class Judge : MonoBehaviour
     //変数の宣言
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
+    [SerializeField] GameObject PauseUI;
+    [SerializeField] GameObject CountdownPanel;
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
     [SerializeField] GameObject stopUI;
     [SerializeField] GameObject countUI;
@@ -68,7 +70,7 @@ public class Judge : MonoBehaviour
                 }
             }
         }
-
+        }
     }
     void Judgement(float timeLag)
     {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1374,6 +1374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 593779585}
   _audioSource: {fileID: 963194229}
+  CountdownPanel: {fileID: 754444661}
 --- !u!1 &1065862511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +1870,8 @@ MonoBehaviour:
   - {fileID: 8649136471229394076, guid: 0687fb0ba345c4a478578d0dbbdcd66a, type: 3}
   - {fileID: 6140112479820471687, guid: 8b193a55ec0b2473fb353833826658ea, type: 3}
   - {fileID: 6435225637012130868, guid: e0d69ee1fe08849a399dd9c9e942f634, type: 3}
+  PauseUI: {fileID: 593779585}
+  CountdownPanel: {fileID: 754444661}
   notesManager: {fileID: 1707537754}
   stopUI: {fileID: 593779585}
   countUI: {fileID: 158953628}

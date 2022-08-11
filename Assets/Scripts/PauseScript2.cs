@@ -8,6 +8,7 @@ public class PauseScript2 : MonoBehaviour
 	[SerializeField]
 	private GameObject pauseUI;
 	[SerializeField] private AudioSource _audioSource;
+	[SerializeField] GameObject CountdownPanel;
 
 	void Start()
 	{
@@ -18,7 +19,7 @@ public class PauseScript2 : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKeyDown("q"))
+		if (Input.GetKeyDown("q") && !CountdownPanel.activeSelf)
 		{
 			//　ポーズUIのアクティブ、非アクティブを切り替え
 			pauseUI.SetActive(!pauseUI.activeSelf);
