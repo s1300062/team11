@@ -70,7 +70,6 @@ public class Judge : MonoBehaviour
                 }
             }
         }
-        }
     }
     void Judgement(float timeLag)
     {

@@ -368,11 +368,6 @@ Transform:
   m_Father: {fileID: 1540639215}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &158953628 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8543755024646611340, guid: 6e0b8ef346d553d4f91863afaa482d9b, type: 3}
-  m_PrefabInstance: {fileID: 8543755024913457897}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414925938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1869,7 @@ MonoBehaviour:
   CountdownPanel: {fileID: 754444661}
   notesManager: {fileID: 1707537754}
   stopUI: {fileID: 593779585}
-  countUI: {fileID: 158953628}
+  countUI: {fileID: 754444661}
 --- !u!4 &1541969007
 Transform:
   m_ObjectHideFlags: 0
