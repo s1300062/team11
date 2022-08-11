@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Judge : MonoBehaviour
 {
     //変数の宣言
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
-    [SerializeField] GameObject PauseUI;
-    [SerializeField] GameObject CountdownPanel;
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
     [SerializeField] GameObject stopUI;
     [SerializeField] GameObject countUI;
@@ -69,7 +69,11 @@ public class Judge : MonoBehaviour
                     //ミス
                 }
             }
-        }
+
+            if (notesManager.NoteType.Count == 0)
+            {
+                Invoke("FINISH", 5f);
+            }
         }
     }
     void Judgement(float timeLag)
@@ -124,4 +128,10 @@ public class Judge : MonoBehaviour
     {
         Instantiate(MessageObj[judge], new Vector3(notesManager.LaneNum[0] - 1.5f, 0.76f, 0.15f), Quaternion.Euler(45, 0, 0));
     }
+
+    void FINISH()
+    {
+        SceneManager.LoadScene("2nd game");
+    }
+        
 }
