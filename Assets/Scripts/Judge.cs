@@ -67,7 +67,7 @@ public class Judge : MonoBehaviour
         }
         if (notesManager.NoteType.Count == 0)
         {
-            SceneManager.LoadScene("Result");
+            Invoke(nameof(changeScene), 5f);
         }
     }
     void Judgement(float timeLag)
@@ -121,5 +121,10 @@ public class Judge : MonoBehaviour
     void message(int judge)//判定を表示する
     {
         Instantiate(MessageObj[judge], new Vector3(notesManager.LaneNum[0] - 1.5f, 0.76f, 0.15f), Quaternion.Euler(45, 0, 0));
+    }
+
+    void changeScene()
+    {
+        SceneManager.LoadScene("Result");
     }
 }
