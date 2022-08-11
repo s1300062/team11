@@ -288,6 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 4
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!65 &156132327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -539,6 +541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 2
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!65 &693832702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1052,6 +1056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 1
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!1 &953666228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1092,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 3
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!65 &953666230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1857,6 +1865,8 @@ MonoBehaviour:
   - {fileID: 6140112479820471687, guid: 8b193a55ec0b2473fb353833826658ea, type: 3}
   - {fileID: 6435225637012130868, guid: e0d69ee1fe08849a399dd9c9e942f634, type: 3}
   notesManager: {fileID: 1707537754}
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!4 &1541969007
 Transform:
   m_ObjectHideFlags: 0
@@ -2461,6 +2471,10 @@ PrefabInstance:
     - target: {fileID: 8543755024646611340, guid: 6e0b8ef346d553d4f91863afaa482d9b, type: 3}
       propertyPath: m_Name
       value: StartCountdown
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543755024646611340, guid: 6e0b8ef346d553d4f91863afaa482d9b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8543755024646611343, guid: 6e0b8ef346d553d4f91863afaa482d9b, type: 3}
       propertyPath: m_Pivot.x

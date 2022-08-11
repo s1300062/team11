@@ -288,6 +288,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 4
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!65 &156132327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -366,6 +368,11 @@ Transform:
   m_Father: {fileID: 1540639215}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &158953628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8543755024646611340, guid: 6e0b8ef346d553d4f91863afaa482d9b, type: 3}
+  m_PrefabInstance: {fileID: 8543755024913457897}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &414925938
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +546,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 2
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!65 &693832702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1052,6 +1061,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 1
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!1 &953666228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,6 +1097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 3
   num: 3
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 754444661}
 --- !u!65 &953666230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1261,7 +1274,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 958e484abfab04d1499f55842039ff35, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5d6ff197fbf76464981b40049555a4f0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1857,6 +1870,8 @@ MonoBehaviour:
   - {fileID: 6140112479820471687, guid: 8b193a55ec0b2473fb353833826658ea, type: 3}
   - {fileID: 6435225637012130868, guid: e0d69ee1fe08849a399dd9c9e942f634, type: 3}
   notesManager: {fileID: 1707537754}
+  stopUI: {fileID: 593779585}
+  countUI: {fileID: 158953628}
 --- !u!4 &1541969007
 Transform:
   m_ObjectHideFlags: 0
@@ -1907,7 +1922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteNum: 0
-  songName: "3\u66F2\u76EE"
+  songName: "\u30C8\u30F3\u30C7\u30E2\u30EF\u30F3\u30C0\u30FC\u30BA"
   LaneNum: 
   NoteType: 
   NotesTime: []
