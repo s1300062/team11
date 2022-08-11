@@ -2493,7 +2493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  musicClip: {fileID: 0}
+  musicClip: {fileID: 8300000, guid: 6a497ea0be71ffc4c8f0c0f55b70b65a, type: 3}
   atTime: 0
   loop: 1
   fadeDuration: 1
