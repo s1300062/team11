@@ -717,7 +717,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 930602014}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 930602017}
   variables: []
   description: 
   stepPause: 0
@@ -760,7 +761,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal: 2nd game
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!1 &957768783
