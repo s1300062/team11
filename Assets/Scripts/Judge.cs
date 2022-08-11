@@ -7,6 +7,8 @@ public class Judge : MonoBehaviour
     //変数の宣言
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
+    [SerializeField] GameObject PauseUI;
+    [SerializeField] GameObject CountdownPanel;
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
     public static int score = 0;
 
@@ -18,6 +20,8 @@ public class Judge : MonoBehaviour
 
     void Update()
     {
+        if(!PauseUI.activeSelf && !CountdownPanel.activeSelf)
+        {
         timer += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.D))//〇キーが押されたとき
         {
@@ -63,7 +67,7 @@ public class Judge : MonoBehaviour
                 //ミス
             }
         }
-
+        }
     }
     void Judgement(float timeLag)
     {
