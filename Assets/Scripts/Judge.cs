@@ -8,6 +8,7 @@ public class Judge : MonoBehaviour
 {
     //変数の宣言
     public static int score;
+    public static int _j;
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
@@ -125,6 +126,30 @@ public class Judge : MonoBehaviour
 
     void changeScene()
     {
-        SceneManager.LoadScene("Result");
+        if (SceneManager.GetActiveScene().name == "1st game")
+        {
+            if (score >= 259200)
+            {
+                SceneManager.LoadScene("story-1-G");
+                _j++;
+            }
+            else SceneManager.LoadScene("story-1-B");
+        }else if (SceneManager.GetActiveScene().name == "2nd game")
+        {
+            if (score >= 204600)
+            {
+                SceneManager.LoadScene("story-2-G");
+                _j++;
+            }
+            else SceneManager.LoadScene("story-2-B");
+        }else
+        {
+            if (score >= 181200)
+            {
+                SceneManager.LoadScene("story-3-G");
+                _j++;
+            }
+            else SceneManager.LoadScene("story-3-B");
+        }
     }
 }
