@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Judge : MonoBehaviour
 {
     //変数の宣言
     private float timer;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
-    [SerializeField] GameObject PauseUI;
-    [SerializeField] GameObject CountdownPanel;
     [SerializeField] NotesManager notesManager;//スクリプト「notesManager」を入れる変数
     [SerializeField] GameObject stopUI;
     [SerializeField] GameObject countUI;
     public static int score = 0;
+    public static int _i = 0;
 
     void Start()
     {
@@ -69,6 +70,11 @@ public class Judge : MonoBehaviour
                     //ミス
                 }
             }
+
+            if (notesManager.NoteType.Count == 0)
+            {
+                Invoke("FINISH", 5f);
+            }
         }
     }
     void Judgement(float timeLag)
@@ -123,4 +129,39 @@ public class Judge : MonoBehaviour
     {
         Instantiate(MessageObj[judge], new Vector3(notesManager.LaneNum[0] - 1.5f, 0.76f, 0.15f), Quaternion.Euler(45, 0, 0));
     }
+
+    void FINISH()
+    {
+        if (SceneManager.GetActiveScene().name == "1st game")
+        {
+            if (score >= 259200)
+            {
+                SceneManager.LoadScene("story-1-G");
+                _i++;
+            }
+            else SceneManager.LoadScene("story-1-B");
+        }
+
+        else if (SceneManager.GetActiveScene().name == "2nd game")
+        {
+            if (score >= 204600)
+            {
+                SceneManager.LoadScene("story-2-G");
+                _i++;
+            }
+            else SceneManager.LoadScene("story-2-B");
+        }
+
+        else if (SceneManager.GetActiveScene().name == "3rd game")
+        {
+            if (score >= 204600)
+            {
+                SceneManager.LoadScene("story-3-G");
+                _i++;
+            }
+            else SceneManager.LoadScene("story-3-B");
+        }
+
+    }
+        
 }
